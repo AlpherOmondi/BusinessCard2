@@ -3,7 +3,9 @@ package com.example.businesscard2
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -22,8 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                   CreateBizCard(
-                   )
+                   CreateBizCard()
                 }
             }
         }
@@ -32,7 +33,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun CreateBizCard(){
-Text(text = "This is my card")
+Surface(modifier = Modifier.fillMaxWidth().fillMaxHeight()){
+
+}
 }
 
 @Preview(showBackground = true)
