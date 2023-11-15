@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
 }
 @Composable
 fun Merger(){
-    Text("Merging worked")
+    Text("Testing merger")
 }
 @Composable
 fun CreateBizCard() {
