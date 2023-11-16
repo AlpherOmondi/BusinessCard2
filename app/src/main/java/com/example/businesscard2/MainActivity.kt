@@ -46,13 +46,10 @@ fun Merger(){
 }
 @Composable
 fun CreateBizCard() {
-    Surface(
-        modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight()
-    ) {
+
+
         Card(
-            modifier = Modifier.width(200.dp).height(100.dp).padding(12.dp),
+            modifier = Modifier.width(200.dp).height(300.dp).padding(12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.White
             ),
@@ -64,7 +61,7 @@ fun CreateBizCard() {
 
         }
     }
-}
+
 
 @Preview(showBackground = true)
 @Composable
