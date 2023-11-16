@@ -34,12 +34,16 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     CreateBizCard()
+                    Merger()
                 }
             }
         }
     }
 }
-
+@Composable
+fun Merger(){
+    Text("Testing merger")
+}
 @Composable
 fun CreateBizCard() {
     Surface(
