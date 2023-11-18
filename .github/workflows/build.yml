@@ -18,3 +18,10 @@ jobs:
         run: chmod +x ./gradlew
       - name: Build with gradle
         run: ./gradlew build --stacktrace
+        
+      - name: Merge Pull Request Using CLI
+        run: |
+         gh pr merge ${{ github.event.number }} --merge
+        env:
+          GITHUB_TOKEN: ${{ secrets.token }}
+      
