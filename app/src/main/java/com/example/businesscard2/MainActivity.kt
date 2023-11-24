@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
 }
 @Composable
 fun Merger(){
-    Text("Testing merger")
+    Text("Auto merge working")
 }
 @Composable
 fun CreateBizCard() {
@@ -60,6 +60,7 @@ fun CreateBizCard() {
             )
 
         }
+    Merger()
     }
 
 
@@ -68,5 +69,6 @@ fun CreateBizCard() {
 fun GreetingPreview() {
     BusinessCard2Theme {
         CreateBizCard()
+
     }
 }
