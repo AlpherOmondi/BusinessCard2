@@ -34,16 +34,13 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     CreateBizCard()
-                    Merger()
+
                 }
             }
         }
     }
 }
-@Composable
-fun Merger(){
-    Text("Auto merge working")
-}
+
 @Composable
 fun CreateBizCard() {
 
@@ -60,7 +57,7 @@ fun CreateBizCard() {
             )
 
         }
-    Merger()
+
     }
 
 
